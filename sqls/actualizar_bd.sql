@@ -5,3 +5,8 @@ ALTER TABLE `bd2_202225_27922357`.`Compra`   
     ADD COLUMN `precio` FLOAT NOT NULL AFTER `fecha`, 
   DROP PRIMARY KEY,
   ADD PRIMARY KEY (`nroSuc`, `codigo`, `cantidad`, `fecha`, `precio`);
+
+ALTER TABLE `bd2_202225_27922357`.`Ventas`   
+    ADD COLUMN `precio` FLOAT NOT NULL AFTER `codigo`, 
+  DROP PRIMARY KEY,
+  ADD PRIMARY KEY (`cantidad`, `hora`, `fecha`, `nroSuc`, `codigo`, `precio`);
