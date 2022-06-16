@@ -10,3 +10,6 @@ ALTER TABLE `bd2_202225_27922357`.`Ventas`   
     ADD COLUMN `precio` FLOAT NOT NULL AFTER `codigo`, 
   DROP PRIMARY KEY,
   ADD PRIMARY KEY (`cantidad`, `hora`, `fecha`, `nroSuc`, `codigo`, `precio`);
+
+ALTER TABLE `bd2_202225_27922357`.`distribuye`   
+    ADD COLUMN `estatus` VARCHAR(20) NULL AFTER `codigo`;
